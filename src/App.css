@@ -63,7 +63,8 @@ header {
 
 .header-nav div {
   height: 100%;
-  width: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
   margin-left: 15px;
   border-radius: 4px;
 
