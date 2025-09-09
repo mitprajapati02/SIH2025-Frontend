@@ -9,7 +9,11 @@ import Layout from './components/Layout'
 import LandingPageLayout from './components/LandingPageLayout'
 import DropSheetLayout from './components/DropSheetLayout'
 import AdminLayout from './components/AdminLayout'
-
+import NotFound from './components/NoteFound'
+import TypeErrorPage from './components/TypeErrorPage'
+import ContactPage from './components/ContactPage'
+import AboutUsPage from './components/AboutUsPage'
+import ServicesPage from './components/ServicesPage'
 
 
 
@@ -28,10 +32,17 @@ function App() {
       <Router>
         <Layout>
           <Routes>
-
+            <Route path="*" element={<NotFound />} />
             <Route path="/" element={<LandingPageLayout />} />
+            <Route path="/type-error" element={<TypeErrorPage />} />
+            <Route path="/about" element={<AboutUsPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/login" element={<TypeErrorPage />} />
             <Route path="/drop-sheet" element={<DropSheetLayout />} />
             <Route path="/admin-dashboard" element={<AdminLayout />} />
+            <Route path='/institution-dashboard' element={<AdminLayout />} />
+
           </Routes>
         </Layout>
       </Router>

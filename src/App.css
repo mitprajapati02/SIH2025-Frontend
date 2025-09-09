@@ -60,6 +60,11 @@ header {
   align-items: center;
   padding-left: 50px;
 }
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block !important;
+}
 
 .header-nav div {
   height: 100%;
@@ -378,7 +383,7 @@ footer {
 }
 
 .footer-links-list a:hover {
-  color: #d81159; /* gold highlight */
+  color: #d81159 !important; /* gold highlight */
 }
 
 /* footer style end */

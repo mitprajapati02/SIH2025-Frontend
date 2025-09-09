@@ -1,5 +1,6 @@
 
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 function LandingPageLayout() {
     return (
@@ -13,10 +14,10 @@ function LandingPageLayout() {
                                 Our advanced System helps identify at-risk students early and provides targeted counseling support to improve
                                 retention and academic outcomes.</p></div>
                         <div className="hero-buttons" ><div>
-                            <button className="get-started" style={{ padding: '10px 20px', border: 'none', borderRadius: '5px' }}>Get Started</button></div>
+                            <button className="get-started" style={{ padding: '10px 20px', border: 'none', borderRadius: '5px' }}><Link to="/drop-sheet">Get Started</Link></button></div>
                             <div>
                                 <button className="learn-more" style={{ padding: '10px 20px', border: 'none', borderRadius: '5px' }}>
-                                    Learn More</button></div></div>
+                                    <Link to="/services">Learn More</Link></button></div></div>
                     </div>
                     <div>
                         <div className="hero-image-div" >
@@ -43,8 +44,12 @@ function LandingPageLayout() {
                         <p style={{ color: "black", fontSize: '1.2rem', fontWeight: "400" }}>Our platform uses advanced analytics to identify at-risk students and provide timely notification to mentors so they can take proactive measures.</p>
                     </div>
                     <div className="select-core-addons">
-                        <div className="with-background"  ><button className='get-merged' style={{ textTransform: 'capitalize' }}>Let's Predict</button></div>
-                        <div className="with-background-two"><button className='are-you-institution'>Are You an Institution?</button></div>
+                        <div className="with-background"  ><button className='get-merged' style={{ textTransform: 'capitalize' }}><Link to="/drop-sheet">Let's Predict</Link></button></div>
+                        <div className="with-background-two">
+                            <button className='are-you-institution'>
+                                <Link to="/institution-dashboard">Are You an Institution?</Link>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </main>
