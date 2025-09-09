@@ -2,6 +2,8 @@
 import '../App.css';
 import { Link } from 'react-router-dom';
 
+import profileImage from '../assets/profileImage.jpg'
+
 function LandingPageLayout() {
     return (
         <>
@@ -22,7 +24,7 @@ function LandingPageLayout() {
                     <div>
                         <div className="hero-image-div" >
                             <div className="hero-image-box">
-                                <img src="https://img.freepik.com/free-vector/people-using-digital-devices_53876-40306.jpg?w=740&t=st=1696116061~exp=1696116661~hmac=3a5e2e3f0a4f3f0e2e4c6e4f4e4c6e4f4e4c6e4f4e4c6e4f4e4c6e4f4e4c6e" alt="hero image" />
+                                <img src={profileImage} alt="hero image" />
                                 <div className="risk-based-colors" style={{ marginTop: '10px' }}>
                                     {/* color of div will  be red  */}
                                     <div className="risk-status-color card-btn">Needs Mentorship</div>
