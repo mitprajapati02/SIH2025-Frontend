@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import LandingPage from './components/LandingPage'
 import './App.css'
+// import AdminDashboard from './components/AdminDashboard'
+// import DropSheet from './components/DropSheet'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        Hello world
-      </div>
+
+      {/* <div> */}
+      <LandingPage />
+      {/* <DropSheet /> */}
+
+      {/* </div> */}
+      {/* <AdminDashboard /> */}
     </>
   )
 }
