@@ -36,9 +36,10 @@ function DropSheetLayout() {
             });
 
             const data = await response.json();
+            console.log(data);
 
             if (response.ok) {
-                // ✅ Redirect to admin dashboard with backend JSON
+                // Redirect to Admin Dashboard with backend JSON
                 navigate("/admin-dashboard", { state: { data } });
             } else {
                 alert("Error: " + data.error);
@@ -48,6 +49,7 @@ function DropSheetLayout() {
             alert("Something went wrong!");
         }
     };
+
 
     return (
         <>
